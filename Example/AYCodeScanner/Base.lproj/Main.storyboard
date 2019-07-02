@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AYCodeScanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanner" translatesAutoresizingMaskIntoConstraints="NO" id="ab4-ay-WQB">
+                                <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ab4-ay-WQB" secondAttribute="height" id="DeA-tc-hR3"/>
+                                    <constraint firstAttribute="height" constant="128" id="gWT-Hd-1IF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2Z-Th-cHc">
+                                <rect key="frame" x="167.5" y="405.5" width="40" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" red="0.9231991171836853" green="0.38287997245788574" blue="0.47450613975524902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnScanTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IaS-Er-cf2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try to scan some codes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVT-LS-N0S">
+                                <rect key="frame" x="106.5" y="244.5" width="162.5" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.27103531360626221" green="0.29346057772636414" blue="0.32549488544464111" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jVT-LS-N0S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="2pH-Lw-Pf2"/>
+                            <constraint firstItem="ab4-ay-WQB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9Bh-aJ-evt"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="jVT-LS-N0S" secondAttribute="trailing" constant="8" id="Eat-bT-sTX"/>
+                            <constraint firstItem="ab4-ay-WQB" firstAttribute="top" secondItem="jVT-LS-N0S" secondAttribute="bottom" constant="8" id="KX9-xL-1JK"/>
+                            <constraint firstItem="ab4-ay-WQB" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="QgE-JR-D9x"/>
+                            <constraint firstItem="jVT-LS-N0S" firstAttribute="centerX" secondItem="ab4-ay-WQB" secondAttribute="centerX" id="Qqx-fL-YZG"/>
+                            <constraint firstItem="W2Z-Th-cHc" firstAttribute="centerX" secondItem="ab4-ay-WQB" secondAttribute="centerX" id="V95-Aa-suh"/>
+                            <constraint firstItem="W2Z-Th-cHc" firstAttribute="top" secondItem="ab4-ay-WQB" secondAttribute="bottom" constant="8" id="kkA-Hc-8Jy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnScan" destination="W2Z-Th-cHc" id="zrH-iS-8KG"/>
+                        <outlet property="lblMessage" destination="jVT-LS-N0S" id="dVA-fF-w0V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scanner" width="180" height="180"/>
+    </resources>
+</document>

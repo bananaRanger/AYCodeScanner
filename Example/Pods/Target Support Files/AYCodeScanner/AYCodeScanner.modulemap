@@ -1,0 +1,6 @@
+framework module AYCodeScanner {
+  umbrella header "AYCodeScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_AYCodeScanner_Tests {
+  umbrella header "Pods-AYCodeScanner_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

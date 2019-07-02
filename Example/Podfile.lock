@@ -1,0 +1,16 @@
+PODS:
+  - AYCodeScanner (0.1.0)
+
+DEPENDENCIES:
+  - AYCodeScanner (from `../`)
+
+EXTERNAL SOURCES:
+  AYCodeScanner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AYCodeScanner: 5eed42788295a78e375aad0a410b3c429f4a862a
+
+PODFILE CHECKSUM: b3041a16df55777a37f429b2afe64e0b6574a984
+
+COCOAPODS: 1.6.0

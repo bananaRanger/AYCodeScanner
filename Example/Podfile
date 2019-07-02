@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AYCodeScanner_Example' do
+  pod 'AYCodeScanner', :path => '../'
+
+  target 'AYCodeScanner_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
