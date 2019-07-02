@@ -9,6 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### Don't forget add permission in project Info.plist
+
+**Key:** Privacy - Camera Usage Description
+
+**Value:** $(PRODUCT_NAME) needs the camera
+
 ## Installation
 
 SheetViewController is available through [CocoaPods](https://cocoapods.org). To install
